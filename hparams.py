@@ -23,8 +23,8 @@ class create_hparams():
     # Data Parameters             #
     ################################
     load_mel_from_disk = False
-    training_files = '/kaggle/input/traintxt/train.txt'
-    validation_files = '/kaggle/input/testtxt/test.txt'
+    training_files = '/kaggle/input/demotraintxt/demotrain.txt'
+    validation_files = '/kaggle/input/demotraintxt/demotrain.txt'
     text_cleaners = ['basic_cleaners']
 
     ################################
@@ -79,7 +79,7 @@ class create_hparams():
     learning_rate = 1e-3
     weight_decay = 1e-6
     grad_clip_thresh = 1.0
-    batch_size = 1
+    batch_size = 2
     mask_padding = True  # set model's padded outputs to padded values
 
 # if hparams_string:
