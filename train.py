@@ -276,8 +276,8 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     hparams = create_hparams()
-    torch.backends.cudnn.enabled = True
-    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.enabled = hparams.cudnn_enabled
+    torch.backends.cudnn.benchmark = hparams.cudnn_benchmark
 
     print("FP16 Run:", hparams.fp16_run)
     print("Dynamic Loss Scaling:", hparams.dynamic_loss_scaling)
