@@ -8,7 +8,7 @@ class create_hparams():
     # Experiment Parameters        #
     ################################
     epochs = 1001
-    iters_per_checkpoint = 2000
+    iters_per_checkpoint = 1000
     seed = 1234
     dynamic_loss_scaling = True
     fp16_run = False
@@ -23,15 +23,15 @@ class create_hparams():
     # Data Parameters             #
     ################################
     load_mel_from_disk = False
-    training_files = '/kaggle/input/demotrain/demotrain.txt'
-    validation_files = '/kaggle/input/demotrain/demotrain.txt'
+    training_files = '/kaggle/input/train22050txt/trainTrang22050.txt'
+    validation_files = '/kaggle/input/test22050txt/testTrang22050.txt'
     text_cleaners = ['basic_cleaners']
 
     ################################
     # Audio Parameters             #
     ################################
     max_wav_value = 32768.0
-    sampling_rate = 16000
+    sampling_rate = 22050
     filter_length = 1024
     hop_length = 256
     win_length = 1024
