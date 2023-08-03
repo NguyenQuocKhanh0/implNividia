@@ -23,15 +23,15 @@ class create_hparams():
     # Data Parameters             #
     ################################
     load_mel_from_disk = False
-    training_files = '/kaggle/input/train22050txt/trainTrang22050.txt'
-    validation_files = '/kaggle/input/test22050txt/testTrang22050.txt'
+    training_files = '/kaggle/input/trangtxt/trainTrang.txt'
+    validation_files = '/kaggle/input/trangtxt/testTrang.txt'
     text_cleaners = ['basic_cleaners']
 
     ################################
     # Audio Parameters             #
     ################################
     max_wav_value = 32768.0
-    sampling_rate = 22050
+    sampling_rate = 16000
     filter_length = 1024
     hop_length = 256
     win_length = 1024
