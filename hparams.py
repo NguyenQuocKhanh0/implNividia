@@ -8,7 +8,7 @@ class create_hparams():
     # Experiment Parameters        #
     ################################
     epochs = 1001
-    iters_per_checkpoint = 1000
+    iters_per_checkpoint = 3000
     seed = 1234
     dynamic_loss_scaling = True
     fp16_run = False
