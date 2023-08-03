@@ -23,8 +23,8 @@ class create_hparams():
     # Data Parameters             #
     ################################
     load_mel_from_disk = False
-    training_files = '/kaggle/input/demotraintxt/demotrain.txt'
-    validation_files = '/kaggle/input/demotraintxt/demotrain.txt'
+    training_files = '/kaggle/input/trangtxt/trainTrang.txt'
+    validation_files = '/kaggle/input/trangtxt/testTrang.txt'
     text_cleaners = ['basic_cleaners']
 
     ################################
