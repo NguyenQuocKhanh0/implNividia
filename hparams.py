@@ -17,7 +17,7 @@ class create_hparams():
     dist_url = "tcp://localhost:54321"
     cudnn_enabled = True
     cudnn_benchmark = False
-    ignore_layers = ['']
+    ignore_layers = ['embedding.weight']
     print("create Hparam success", cudnn_enabled)
     ################################
     # Data Parameters             #
